@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Guessing-The Number</title>
+</head>
+
+<body onload="init()" >
+    <div class="contaier" id="contaier" >
+        <div class="main">
+            <div class="homePage" id="homePage">
+                <header  class="darkModeTextColor" >
+                    <h2>Guess the random number between 1-100</h2>
+                </header>
+                <img src="game picture.webp" alt="img">
+                <button  class="darkModeTextColor" class="start" onclick="startgame()" >Start</button>
+                <button class="darkModeTextColor" class="soundOnOff" id="soundOnOff" >Sound On</button>
+                <button class="darkModeTextColor" class="darkOnOff" id="darkOnOff" >Dark Mode Off</button>
+                
+            </div>
+
+            <div class="modePage" id="modePage">
+                <h2  class="darkModeTextColor" >Select Mode</h2>
+                <div class="modes">
+                    <button onclick="easyMode()" class="easyMode" id="modeBUtton" >Easy : 10 attemtpts</button>
+                    <button onclick="mediumMode()" class="mediumMode" id="modeBUtton">Medium : 5 attemtpts</button>
+                    <button onclick="hardMode()" class="hardMode" id="modeBUtton">Hard : 3 attemtpts</button>
+                </div>
+                <div class="backDiv">
+                <button class="darkModeTextColor" class="back" onclick="backScreen()">Back</button></div>
+            </div>
+
+            <div class="playPage" id="playgame">
+                <button class="newGame" id="NewGame" onclick="NewGame()">New Game</button>
+                <div class="commentry" >
+                <h2 class="darkModeTextColor"  id="commentry">Your Guess</h2></div>
+                <input
+                class="darkModeTextColor"
+                 onchange="inputvalue()"
+                  type="number"
+                   placeholder="Enter Your Guess.."
+                   min="1"
+                   max="100"
+                   id="inputBox"
+                   >
+                   <div class="showInput" >
+                <p class="darkModeTextColor"> Number of attemtpts : <span id="UserAttemps">0</span> <br> <br>
+                    Number of previous guesses : <span id="UserShow">_</span>
+                </p></div>
+            </div>
+        </div>
+    </div>
+    <!-- Game sound -->
+    <audio id="gameSound" >
+        <source src="game sound.mp3"  type="audio/mp3">
+    </audio>
+    <audio id="gameOver" >
+        <source src="game over.mp3"  type="audio/mp3">
+    </audio>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    /* background-color: rgb(9, 9, 56); */
+}
+
+.contaier{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 100vh;
+}
+.main {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    width: 50vw;
+    height: auto;
+    background-color: rgb(218, 216, 216);
+    border-radius: 8px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-size: 15px;
+}
+
+img {
+    padding-top: 20px;
+    height: 10rem;
+    width: 20rem;
+    padding-bottom: 10px;
+}
+
+.homePage,
+.modePage,
+.playPage {
+    margin-top: 20px;
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.backDiv{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.homePage button,
+.modePage button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font: 10px solid black;
+    font-size: larger;
+    padding: 10px 20px 5px 20px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-family: "Press Start 2P", system-ui;
+    font-style: normal;
+}
+
+
+.modePage h2,
+.commentry {
+    display: flex;
+    justify-content: center;
+    font-style: oblique;
+    font-weight: 700;
+    margin-bottom: 12vh;
+}
+
+.modes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#modeBUtton ,
+.newGame {
+    background: linear-gradient(135deg, rgb(46, 74, 175), #6f26d4);
+    color: bisque;
+    margin: 10px;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+}
+
+.commentry {
+    margin-bottom: 20px;
+    font-family: "Press Start 2P", system-ui;
+    font-style: normal;
+    font-size: small;
+}
+
+.playPage input {
+    background: rgb(195, 195, 195);
+    border-radius: 3px;
+    border: 1px solid gray;
+    padding: 5px 10px;
+    margin-bottom: 25px;
+    margin-top: 15px;
+    outline: none;
+    width: 40vw;
+}
+
+@media(max-width:750px) {
+    
+    #contaier{
+        padding: 0px;
+        margin-left:12px;
+        display: grid;
+        place-items: center;
+    }
+    .showInput{
+        width: 65vw;
+     }
+    .commentry{
+        width: 80vw;
+        
+    }
+    .commentry h2{
+        text-align: center;
+        
+    }
+
+    .main {
+        width: 90vw;
+        height: auto;
+        background-color: rgb(218, 216, 216);
+        border-radius: 8px;
+        margin-left: 0vh;
+    } 
+
+  
+}
+
+@media(max-width:900px) {
+    header {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        color: black;
+        font-size: 10px;
+    }
+  
+}
+
+/* DARK-MODE */
+.darkMode .contaier{
+    background-color: black;
+}
+.darkMode .main{
+    background-color: rgb(27, 27, 27);
+}
+.darkMode .darkModeTextColor{
+color: rgb(191, 194, 196);
+}
+.darkMode .playPage input{
+    background: transparent;
+}
