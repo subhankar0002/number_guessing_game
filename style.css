@@ -107,7 +107,17 @@ img {
     font-family: "Press Start 2P", system-ui;
     font-style: normal;
     font-size: small;
+    text-align: center;
 }
+
+input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        input[type="number"] {
+            -moz-appearance: textfield;
+        }
 
 .playPage input {
     background: rgb(195, 195, 195);
@@ -117,7 +127,7 @@ img {
     margin-bottom: 25px;
     margin-top: 15px;
     outline: none;
-    width: 40vw;
+    width: 15vw;
 }
 
 @media(max-width:750px) {
@@ -137,7 +147,6 @@ img {
     }
     .commentry h2{
         text-align: center;
-        
     }
 
     .main {
@@ -147,8 +156,9 @@ img {
         border-radius: 8px;
         margin-left: 0vh;
     } 
-
-  
+    .playPage input {
+        width: 40vw;
+    }
 }
 
 @media(max-width:900px) {

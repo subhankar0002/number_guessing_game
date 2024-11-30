@@ -107,13 +107,13 @@ const inputvalue = () => {
     else {
         if (userGuess > computerGuess) {
             document.getElementById('inputBox').setAttribute("disabled", true);
-            document.getElementById('commentry').innerHTML = `You lose!!\nCorrect value was ${computerGuess}`;
+            document.getElementById('commentry').innerHTML = `You lose!!<br>Correct value was ${computerGuess}`;
             document.getElementById('NewGame').style.display = "flex";
             gameOver.play();
         }
         else if (userGuess < computerGuess) {
             document.getElementById('inputBox').setAttribute("disabled", true);
-            document.getElementById('commentry').innerHTML = `You lose!!\nCorrect value was ${computerGuess}`;
+            document.getElementById('commentry').innerHTML = `You lose!!<br>Correct value was ${computerGuess}`;
             document.getElementById('NewGame').style.display = "flex";
             gameOver.play();
         }
